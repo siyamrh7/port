@@ -11,6 +11,6 @@ app.use('/',router)
 app.get('/',(req,res)=>{
     res.send("server okay")
 })
-app.listen(2000,()=>{
+app.listen(process.env.PORT || 2000,()=>{
     console.log("server runnuing at 20000")
 })
