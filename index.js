@@ -8,6 +8,9 @@ const app=express()
 app.use(cors())
 app.use(express.json())
 app.use('/',router)
+app.get('/',(req,res)=>{
+    res.send("server okay")
+})
 app.listen(2000,()=>{
     console.log("server runnuing at 20000")
 })
